@@ -87,8 +87,10 @@ end;
 
 ###### Handle Result ######
 
-As javascript run a-synchronooius of AL, you need to handle the model prediction result in the usercontrol trigger as bellow.
-This function return raw model result, and you can use a premade function to map it with proper label and get the model condifence.
+As javascript run asynchronous of AL code, you need to handle the model prediction in usercontrol trigger.
+
+This trigger get the model raw result, you can use function to retrieve the proper text matching prediction with confidence percentage.
+
 
 ```
 trigger RunModelSuceed(ModelID: Integer; Result: Text)

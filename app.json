@@ -1,0 +1,32 @@
+{
+  "id": "d6cf7404-4ba2-45cf-b567-69797d643192",
+  "name": "YDF AI Models",
+  "publisher": "Maxime Caty",
+  "version": "25.0.250507.183939",
+  "brief": "",
+  "description": "This is a simple exemple using YDF model library to create, train and run a model in Business central from the browser.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 61350,
+      "to": 61450
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "14.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

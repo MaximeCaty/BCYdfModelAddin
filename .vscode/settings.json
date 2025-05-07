@@ -1,0 +1,36 @@
+{
+    "tabsColor.activeTab": {
+			"backgroundColor": "yellow",
+			"fontColor": "black"
+		},
+		"al.packageCachePath": [
+			"../.alpackages"
+		],
+		"al.assemblyProbingPaths": ["./.netpackages", "../.netpackages", "C:/Windows/Microsoft.NET/assembly/GAC_MSIL", "C:/Windows/Microsoft.NET/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089"],
+		"al.enableCodeAnalysis": true,
+		"al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"],
+		"al.snapshotOutputPath": "./.snapshots",
+		"al.ruleSetPath": "CodeCop.ruleset.json",
+		"al.incrementalBuild": true,
+		"al.backgroundCodeAnalysis": "Project",
+		"CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.OnSaveAlFileAction": "Rename",
+		"CRS.RenameWithGit": true,
+		"alOutline.codeCleanupActions": ["AddApplicationAreas","AddMissingParentheses","CollapseEmptyBrackets","ConvertObjectIdsToNames","FixIdentifiersCase","FixKeywordsCase","FormatDocument","MakeFlowFieldsReadOnly","OneStatementPerLine","RemoveBeginEnd","RemoveEmptyTriggers","RemoveProceduresSemicolon","RemoveRedundantDataClassification","RemoveRedundantAppAreas","RemoveStrSubstNoFromError","RemoveUnusedUsings","RemoveUnusedVariables","RemoveWithStatements","SortPermissions","SortPermissionSetList","SortProperties","SortTableFields","SortVariables","TrimTrailingWhitespace"],
+		"alOutline.defaultAppArea": "All",
+		"alOutline.defaultRemoveEmptySectionsSettings": {
+			"removeActionGroups": true,
+			"removeActions": true,
+			"ignoreComments": false
+		},
+		"alOutline.defaultRemoveUnusedVariablesSettings": {
+			"removeLocalVariables": true, 
+			"removeGlobalVariables": true
+		},
+		"alOutline.defaultRemoveEmptyTriggersSettings": {
+			"removeTriggers": true,
+			"removeSubscribers": true,
+			"ignoreComments": true
+		}
+}

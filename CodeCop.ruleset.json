@@ -1,0 +1,66 @@
+{
+    "name": "ECA",
+    "description": "Ignore les warning non prioritaire",
+    "rules": [
+        {
+            "id": "AL0424",
+            "action": "None",
+            "justification": "CaptionML"
+        },
+        {
+            "id": "AA0139",
+            "action": "None",
+            "justification": "Text overflows with non ended text is annoying"
+        },
+        {
+            "id": "AA0204",
+            "action": "None",
+            "justification": "Page field name and vairable with the same name is not a problem. Accessing Page field require CurrPage."
+        },
+        {
+            "id": "AA0215",
+            "action": "None",
+            "justification": "File naming convention"
+        },
+        {
+            "id": "AA0074",
+            "action": "None",
+            "justification": "Variables name suffixe"
+        },
+        {
+            "id": "AA0218",
+            "action": "None",
+            "justification": "Field Tooltip"
+        },
+        {
+            "id": "AA0470",
+            "action": "None",
+            "justification": "Label comment"
+        },
+        {
+            "id": "AA0205",
+            "action": "None",
+            "justification": "Use of unassigned variable - could use default value"
+        },
+        {
+            "id": "PTE0005",
+            "action": "None",
+            "justification": "Allow Target : OnPrem"
+        },
+        {
+            "id": "PTE0004",
+            "action": "None",
+            "justification": "skip mandatory default permission set"
+        },
+        {
+            "id": "AL0482",
+            "action": "None",
+            "justification": "Image none can be force on cue in order to complete large number"
+        },
+        {
+            "id": "AA0225",
+            "action": "None",
+            "justification": "Caption not mandatory for tehcnical field/API"
+        }          
+    ]
+}

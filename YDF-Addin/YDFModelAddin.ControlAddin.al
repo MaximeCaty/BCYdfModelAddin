@@ -23,7 +23,7 @@ controladdin YDFModelAddin
     procedure TestSampleModel(); // This is just a basic test using google data sample to create, train and run a small model. Result are shown in browser console.
     procedure LoadModel(ModelID: Integer; Base64ModelFileContent: Text);   // This just passe a model file to the javascript to load it and return geenral information in bellow trigger
     procedure RunModel(ModelID: Integer; JsonInputs: Text); // This passe a model file to the javascript to load and run it using JsonInputs. Result are then triggered in RunModelSuceed or RunModelFailed
-    procedure TrainModel(ComaSeparatedDataWithHeader: Text; FeaturesSemantic: Text; OutputColumnLabel: Text); // Create and traina  model given input data, formated as csv file coma separated and with one header row indicating the name of columns, and the name of column the output shall be learned to.
+    procedure TrainModel(ComaSeparatedDataWithHeader: Text; OutputColumnLabel: Text); // Create and traina  model given input data, formated as csv file coma separated and with one header row indicating the name of columns, and the name of column the output shall be learned to.
 
 
     // The event declarations specify what callbacks could be raised from JavaScript by using the webclient API:

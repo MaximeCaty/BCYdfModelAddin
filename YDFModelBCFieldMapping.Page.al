@@ -122,6 +122,7 @@ page 61354 "YDF Model BC Field Mapping"
 
                 trigger OnAction();
                 var
+                    FieldRef: FieldRef;
                     Model: Record "YDF AI Models";
                     ModelFieldMapping: Record "YDF Model BC Field Mapping";
                     RecRef: RecordRef;
@@ -130,9 +131,8 @@ page 61354 "YDF Model BC Field Mapping"
                     InputLine: Text;
                     CRLF: Text;
                     OutputFieldName: Text[30];
-                    FieldRef: FieldRef;
-                    Features: Text;
-                    YDFFeatureSemanticJsonLbl: Label '{"name": "%1"}', Locked = true; // Feature Doc : https://ydf.readthedocs.io/en/stable/py_api/utilities/#ydf.Feature
+                    I: Integer;
+                    Count: Integer;
                 begin
                     if not AddinLoaded then
                         Error('The library is not loaded yet.');
@@ -142,7 +142,7 @@ page 61354 "YDF Model BC Field Mapping"
                     Model.Get(Rec."Model ID");
                     Model.TestField("Map to BC Base Table");
                     RecRef.Open(Model."Map to BC Base Table");
-                    RecRef.SetLoadFields(RecRef.SystemIdNo());
+
                     // Fill header (fields names)
                     ModelFieldMapping.SetRange("Model ID", Model.ID);
                     ModelFieldMapping.SetAutoCalcFields("Base Field Name");
@@ -151,17 +151,20 @@ page 61354 "YDF Model BC Field Mapping"
                         InputData += ModelFieldMapping."Base Field Name" + ',';
                         if ModelFieldMapping."Is Output" then
                             OutputFieldName := ModelFieldMapping."Base Field Name";
-                        Features += StrSubstNo(YDFFeatureSemanticJsonLbl, ModelFieldMapping."Base Field Name") + ',';
-                        RecRef.AddLoadFields(ModelFieldMapping."Base Field No.");
+                        RecRef.AddLoadFields(ModelFieldMapping."Base Field No."); // only select the field we need to improve performance
                     until ModelFieldMapping.Next() = 0;
                     InputData := InputData.TrimEnd(',');
-                    Features := '[' + Features.TrimEnd(',') + ']';
                     if OutputFieldName = '' then
                         Error('There must be at one Output field.');
+
                     // Fill datas
+                    Count := Recref.Count(); // for UI progression
+                    if not Confirm(StrSubstNo('Business Central table contain %1 records. The training may take longer depending on the number of records to evaluate and the web page may freeze. Continue ?', Count)) then
+                        exit;
+
                     RecRef.FindSet();
                     Win.Close();
-                    Win.Open('Formatting Dataset...');
+                    Win.Open('Preparing training dataset... \ #1############');
                     repeat
                         InputLine := '';
                         ModelFieldMapping.FindSet();
@@ -171,17 +174,20 @@ page 61354 "YDF Model BC Field Mapping"
                                 FieldRef.Type::Decimal:
                                     InputLine += Format(RecRef.Field(ModelFieldMapping."Base Field No.").Value) + ','
                                 else
-                                    // Cleanup text for unsupported char
+                                    // Cleanup text for unsupported char (CRLF , / \ " ; )
                                     InputLine += '''' + DELCHR(Format(RecRef.Field(ModelFieldMapping."Base Field No.").Value), '=', CRLF).Replace(',', ' ').Replace('''', ' ').Replace('\', '').Replace('/', '').Replace('"', ' ').Replace(';', '').Trim() + ''',';
                             end;
+                            if I mod 10 = 0 then
+                                Win.Update(1, ProgressBar(I / Count));
                         until ModelFieldMapping.Next() = 0;
                         InputLine := InputLine.TrimEnd(',');
                         if (InputLine <> '') and (InputLine <> '," "') then
                             InputData += CRLF + InputLine;
+                        I += 1;
                     until RecRef.Next() = 0;
                     Win.Close();
                     Message('The model is now trainning in the background on your browser. Once the process is completed the file will be downloaded.');
-                    CurrPage.YDFAddin.TrainModel(InputData, Features, OutputFieldName);
+                    CurrPage.YDFAddin.TrainModel(InputData, OutputFieldName);
                 end;
             }
         }
@@ -207,6 +213,22 @@ page 61354 "YDF Model BC Field Mapping"
     begin
         Model.Get(Rec."Model ID");
         Model.TestField("Map to BC Base Table");
+    end;
+
+    procedure ProgressBar(ProgressPercent: Decimal) AsciiResult: Text
+    var
+        i: Integer;
+        ProgressChar: Integer;
+    begin
+        ProgressChar := Round(ProgressPercent * 24, 1, '<') + 1;
+        for i := 1 to 24 do begin
+            if i < ProgressChar then
+                AsciiResult += '▓'
+            else
+                AsciiResult += '░';
+            if i = 12 then // half of 25
+                AsciiResult += Format(Round(ProgressPercent * 100, 1)).PadLeft(2, '0') + '%';
+        end;
     end;
 
     var

@@ -2,7 +2,7 @@
   "id": "d6cf7404-4ba2-45cf-b567-69797d643192",
   "name": "YDF AI Models",
   "publisher": "Maxime Caty",
-  "version": "25.0.250507.183939",
+  "version": "25.0.250508.112810",
   "brief": "",
   "description": "This is a simple exemple using YDF model library to create, train and run a model in Business central from the browser.",
   "privacyStatement": "",
@@ -27,6 +27,7 @@
   },
   "runtime": "14.0",
   "features": [
+    "TranslationFile",
     "NoImplicitWith"
   ]
 }

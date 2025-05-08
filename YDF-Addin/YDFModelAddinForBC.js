@@ -68,7 +68,7 @@ async function TestSampleModel() {
     }
 }
 
-async function TrainModel(ComaSeparatedDataWithHeader, FeaturesSemantic, OutputColumnLabel) {
+async function TrainModel(ComaSeparatedDataWithHeader, OutputColumnLabel) {
   try {
     console.log("Creating a model training...");
 
@@ -76,23 +76,15 @@ async function TrainModel(ComaSeparatedDataWithHeader, FeaturesSemantic, OutputC
 
     task = "CLASSIFICATION";
     label = OutputColumnLabel;
-    min_vocab_frequency = 2; // Prune vocabulary items that appears only once
 
     // Documentation for the learner :
     // https://ydf.readthedocs.io/en/stable/py_api/GradientBoostedTreesLearner/
-    if (FeaturesSemantic.trim().length === 0) {
-      model = new ydfTrainer.GradientBoostedTreesLearner(label, task, min_vocab_frequency=1, min_value_count=1, min_examples=1, verbose=1).train(ComaSeparatedDataWithHeader);
-    } else {
-      // FeaturesSemantic should be an array of json : [{"name": "columnName", "semantic": 2, "min_vocab_frequency": 1},...]
-      // feature documentation : https://ydf.readthedocs.io/en/latest/py_api/utilities/#ydf.Column
-      // Convert to an array of JavaScript objects
-      FeaturesJson = JSON.parse(FeaturesSemantic);
-      features = FeaturesSemantic; //FeaturesJson;
-      console.log("Features semantic :");
-      console.log(features)
-      model = new ydfTrainer.GradientBoostedTreesLearner(label, task, verbose=1).train(ComaSeparatedDataWithHeader, FeaturesJson);
-      
-    }
+    // Unfortunatly javascript wrapper does not support hyperparameter such as feature details to configure how data are used by the model
+    // So alway keep default configuration for the learner :
+    // Text : min vocabulary = 5, max = 2000, semantic alway CATEGORICAL_SET when the column have space
+    // Convert to an array of JavaScript objects
+    model = new ydfTrainer.GradientBoostedTreesLearner(label, task).train(ComaSeparatedDataWithHeader);
+
     console.log("Training completed model:");
     console.log(model);
 
@@ -131,8 +123,6 @@ async function LoadModel(ModelID, Base64ModelFileContent) {
     // Return values to BC trigger :
     //event GetModelInputFeatures(Names: Text; Types: Text; InternalIdx: Text; SpecIdx: Text; LabelClasses: Text)
     Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("LoadModelSuceed",[ModelID, concatenatedNames, concatenatedTypes, concatenatedIntenralIdx, concatenatedSpecIdx, concatenatedLabelClasses],!1);
-
-    //model.unload();
   }
   catch(err) {
     console.log("YDF sample model loading failed :(");
@@ -143,24 +133,16 @@ async function LoadModel(ModelID, Base64ModelFileContent) {
 
 // Load a model and return informations to BC such as inputs and labels
 async function RunModel(ModelID, JsonInputs) {
-  // Convert base64 to blob
   try {
-    //const byteCharacters = atob(Base64ModelFileContent);
-
-    // Load the model with YDF inference
-    //ydf = await YDFInference()
-    //model = await ydf.loadModelFromZipBlob(byteCharacters);
     console.log(YDFmodels[ModelID]);
 
-    // Run model using inputs
+    // Run model using Json inputs:
     console.log(JsonInputs);
     JsonObj = JSON.parse(JsonInputs);
     predictions = YDFmodels[ModelID].predict(JsonObj);
     console.log(predictions);
 
     Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("RunModelSuceed", [ModelID, predictions.toString()], !1);
-
-    //model.unload();
   }
   catch(err) {
     console.log("YDF sample model loading failed :(");

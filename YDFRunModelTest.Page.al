@@ -338,16 +338,23 @@ page 61353 "YDF Run Model Test"
                     JsonInputs: Text;
                     WordsList: List of [Text];
                     Word: Text;
+                    CRLF: Text;
+                    InputLine: Text;
                 begin
                     if not ModelLoaded then
                         Error('The model as not been loaded yet.');
+
+                    CRLF[1] := 13;
+                    CRLF[2] := 10;
 
                     // Create Json input
                     for I := 1 to InputsCount do begin
                         if JsonInputs <> '' then
                             JsonInputs += ',';
                         if InputsType[i] = 'CATEGORICAL_SET' then begin
-                            WordsList := Inputs[i].Trim().Split(' ');
+                            // Cleanup text for unsupported char (CRLF , / \ " ; )
+                            InputLine += '''' + DELCHR(Format(Inputs[i]), '=', CRLF).Replace(',', ' ').Replace('''', ' ').Replace('\', '').Replace('/', '').Replace('"', ' ').Replace(';', '').Trim() + ''',';
+                            WordsList := InputLine.Trim().Split(' ');
                             JsonInputs += '"' + InputsCaption[I] + '": [[';
                             foreach Word in WordsList do
                                 JsonInputs += '"' + Word + '",';

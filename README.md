@@ -1,7 +1,5 @@
 This example show how to use a control addin to train and run YDF AI Model in Business Central.
 
-The model is runned in javascript in client browser, so it is not possible to use thoses function in job queue or web services.
-
 The extension let you store models in a table with associated inputs and labels, train new model from Busienss central data and test a model with user inputs. 
 
 You can also upload existing model created outside of BC, as the library accept tensorflow "SavedModel" format (zip file containing .pb data).
@@ -15,7 +13,15 @@ https://ydf.readthedocs.io/en/stable/javascript/
 Play with it with excel dataset/google sheet :
 https://workspace.google.com/marketplace/app/simple_ml_for_sheets/685936641092?hl=fr
 
-Exemple - Implement a model to run suggestion on an existing page
+###### LIMITATIONS ######
+
+1. The model is runned in javascript in client browser, so it is not possible to use thoses function in job queue or web services.
+
+2. The ydf learner for JS does not support "hyperparameter", we can not defined input configuration.
+This can result in odd behavious regarding text as YDF default configuration is to prune any vocabulary that appear less than 5 times, and max vocabulary is only 2'000 words.
+And we can not define if a text shall be considered as splitted words or one single classification, YDF alway split the text using spaces to create internal dicitonnary.
+
+Code Example - run model prediction on BC page
 
 ###### Add the usercontrol on a page ####
 

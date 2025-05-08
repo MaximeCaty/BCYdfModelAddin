@@ -68,13 +68,14 @@ async function TestSampleModel() {
     }
 }
 
-async function TrainModel(ComaSeparatedDataWithHeader, OutputColumnLabel) {
+async function TrainModel(ComaSeparatedDataWithHeader, task, OutputColumnLabel) {
   try {
     console.log("Creating a model training...");
 
     ydfTrainer = await YDFTraining();
 
-    task = "CLASSIFICATION";
+    // learner task can be "CLASSIFICATION" (for text prediction), "REGRESSION" for numerical, 
+    // "RANKING", "UPLIFTING" or "ANOMALY DETECTION" are not used in this extension
     label = OutputColumnLabel;
 
     // Documentation for the learner :

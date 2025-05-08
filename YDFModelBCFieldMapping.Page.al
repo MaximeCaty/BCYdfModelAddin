@@ -131,6 +131,7 @@ page 61354 "YDF Model BC Field Mapping"
                     InputLine: Text;
                     CRLF: Text;
                     OutputFieldName: Text[30];
+                    OutputFieldType: FieldType;
                     I: Integer;
                     Count: Integer;
                 begin
@@ -138,7 +139,7 @@ page 61354 "YDF Model BC Field Mapping"
                         Error('The library is not loaded yet.');
                     CRLF[1] := 13;
                     CRLF[2] := 10;
-                    Win.Open('Loading Dataset from busienss central...');
+                    Win.Open('Preparing dataset from busienss central...');
                     Model.Get(Rec."Model ID");
                     Model.TestField("Map to BC Base Table");
                     RecRef.Open(Model."Map to BC Base Table");
@@ -149,9 +150,11 @@ page 61354 "YDF Model BC Field Mapping"
                     ModelFieldMapping.FindSet();
                     repeat
                         InputData += ModelFieldMapping."Base Field Name" + ',';
-                        if ModelFieldMapping."Is Output" then
+                        if ModelFieldMapping."Is Output" then begin
                             OutputFieldName := ModelFieldMapping."Base Field Name";
-                        RecRef.AddLoadFields(ModelFieldMapping."Base Field No."); // only select the field we need to improve performance
+                            OutputFieldType := RecRef.Field(ModelFieldMapping."Base Field No.").Type();
+                        end;
+                        RecRef.AddLoadFields(ModelFieldMapping."Base Field No."); // only select the record fields we need to improve performance
                     until ModelFieldMapping.Next() = 0;
                     InputData := InputData.TrimEnd(',');
                     if OutputFieldName = '' then
@@ -171,8 +174,9 @@ page 61354 "YDF Model BC Field Mapping"
                         repeat
                             case RecRef.Field(ModelFieldMapping."Base Field No.").Type of
                                 FieldRef.Type::Integer,
+                                FieldRef.Type::BigInteger,
                                 FieldRef.Type::Decimal:
-                                    InputLine += Format(RecRef.Field(ModelFieldMapping."Base Field No.").Value) + ','
+                                    InputLine += Format(RecRef.Field(ModelFieldMapping."Base Field No.").Value, 0, 9) + ','
                                 else
                                     // Cleanup text for unsupported char (CRLF , / \ " ; )
                                     InputLine += '''' + DELCHR(Format(RecRef.Field(ModelFieldMapping."Base Field No.").Value), '=', CRLF).Replace(',', ' ').Replace('''', ' ').Replace('\', '').Replace('/', '').Replace('"', ' ').Replace(';', '').Trim() + ''',';
@@ -187,7 +191,10 @@ page 61354 "YDF Model BC Field Mapping"
                     until RecRef.Next() = 0;
                     Win.Close();
                     Message('The model is now trainning in the background on your browser. Once the process is completed the file will be downloaded.');
-                    CurrPage.YDFAddin.TrainModel(InputData, OutputFieldName);
+                    if OutputFieldType in [OutputFieldType::Integer, OutputFieldType::Decimal, OutputFieldType::BigInteger] then
+                        CurrPage.YDFAddin.TrainModel(InputData, 'REGRESSION', OutputFieldName)
+                    else
+                        CurrPage.YDFAddin.TrainModel(InputData, 'CLASSIFICATION', OutputFieldName)
                 end;
             }
         }

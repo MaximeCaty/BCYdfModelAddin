@@ -307,7 +307,10 @@ page 61353 "YDF Run Model Test"
                     // Calculate execution duration
                     ExecDuration := CurrentDateTime - StartDateTime;
                     OutPutResult := Rec.DecodeOutputBestValue(Result, Confidence);
-                    OutputConfidence := Format(Confidence) + '%';
+                    if Confidence = 0 then
+                        OutputConfidence := '#N/A'
+                    else
+                        OutputConfidence := Format(Confidence) + '%';
                 end;
 
                 trigger RunModelFailed(ModelID: Integer; ErrorMessage: Text)

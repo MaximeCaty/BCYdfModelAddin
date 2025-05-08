@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="YDF AI Models">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1993046345 - Field 3641927271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF AI Models - Field ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1993046345 - Field 736480557 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Map Output to BC Field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF AI Models - Field Map Output to BC Field - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1993046345 - Field 2142309583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Map to BC Base Table</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF AI Models - Field Map to BC Base Table - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1993046345 - Field 555960971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model File</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF AI Models - Field Model File - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1993046345 - Field 1649373630 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model Inputs</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF AI Models - Field Model Inputs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1993046345 - Field 2509522406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model Labels</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF AI Models - Field Model Labels - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1993046345 - Field 574403633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model Size (Ko)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF AI Models - Field Model Size (Ko) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1993046345 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF AI Models - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1025111125 - Field 3279930492 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model BC Field Mapping - Field Base Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1025111125 - Field 2386363044 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Field No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model BC Field Mapping - Field Base Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1025111125 - Field 1114051984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Table Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model BC Field Mapping - Field Base Table Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1025111125 - Field 1039424040 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model BC Field Mapping - Field Base Table No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1025111125 - Field 1020350951 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Is Output</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model BC Field Mapping - Field Is Output - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1025111125 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model BC Field Mapping - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1025111125 - Field 4202864534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model BC Field Mapping - Field Model ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1967200327 - Field 156501675 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Input Features - Field Input No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1967200327 - Field 1953763373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Map To BC Field No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Input Features - Field Map To BC Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1967200327 - Field 271197729 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Map To BC Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Input Features - Field Map To BC Table No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1967200327 - Field 4202864534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Input Features - Field Model ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1967200327 - Field 1977513542 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>YDF Input Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Input Features - Field YDF Input Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1967200327 - Field 1245899559 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>YDF Input Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Input Features - Field YDF Input Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1967200327 - Field 1835643763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>YDF internalidx</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Input Features - Field YDF internalidx - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1967200327 - Field 876112052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>YDF specIdc</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Input Features - Field YDF specIdc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1442754507 - Field 2764897891 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Labels - Field Label No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1442754507 - Field 3016722389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Labels - Field Label Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1442754507 - Field 4202864534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table YDF Model Labels - Field Model ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4176411503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fields Metadata List</source>
+          <note from="Developer" annotates="general" priority="2">Liste métadata champs</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Fields Metadata List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1025111125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>YDF Model BC Field Mapping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Model BC Field Mapping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1025111125 - Action 257643353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Train Model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Model BC Field Mapping - Action TrainModel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3774189148 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AI Model Label classes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Model Label List - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 3774189148 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This page show the list of text label the library as detected regarding output possibilities. Internally, the model only use numerical data to train and run : label classes are used to map the model output to a text value.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Model Label List - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 3774189148 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>YDF Model Label List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Model Label List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>YDF AI Models List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Control 2981057892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table used for input field mapping and training.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Control Input Table - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Control 736480557 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business central field to map the model output to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Control Map Output to BC Field - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Control 1649373630 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of inputs of the model.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Control Model Inputs - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Control 2509522406 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of output labels classes of the model.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Control Model Labels - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Control 1330325086 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Size of the model.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Control Model Size - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name of the model.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 3241728135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Mapping &amp; Training</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action BCMapping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 3851712227 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Run - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 184859855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model Inputs</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Inputs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 2496062775 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model Labels</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Labels - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 593408208 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Download the selected model.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Download - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 593408208 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Download Model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Download - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 564143759 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test YDF library using google data sample. Result are shown in browser console.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action TestYDF - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 564143759 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test YDF Library</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action TestYDF - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 701918397 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload an AI model file that manualy. The model must be Tensorflow SavecModel format (zip file including .pb without json).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Upload - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 701918397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload Model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Upload - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 701918397 - Method 1377591017 - NamedType 3424339462" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file has been sucessfully uploaded.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Upload - Method OnAction - NamedType SucessLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 2156087049 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Load the model in YDF library and update model as input features and labels.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Verify - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1129968617 - Action 2156087049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verify Model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models - Action Verify - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2485521868 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AI Model Input Features</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models Inputs List - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2485521868 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This page show the list input required for the model to run. The model use thoses input to make prediction. Internally, the model only use numerical data, text inputs are converted using internal dicitonnary, splitted by words (space). Dictionnary is built during the model training, unknown word in input are not used by the model.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Models Inputs List - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run and test YDF Model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This page let you enter input and test the model execution output. The result show the output value with the best score and the confidence percentage.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 1437443233 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 10</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input10 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2075139850 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 11</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input11 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 162049999 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 12</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input12 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 799746616 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 13</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input13 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 3988229701 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 14</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input14 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 330959022 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 15</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input15 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2712836467 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 16</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input16 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 3350533084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 17</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input17 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2244048873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 18</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input18 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2881745490 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 19</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input19 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 3597342561 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 1160910960 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 20</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input20 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2959645944 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2321949327 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2490858350 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input4 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 1853161733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input5 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 1215465116 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 6</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input6 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 577768499 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 7</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input7 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 746677522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 8</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input8 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 108980905 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input 9</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control Input9 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 1347487454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control LoadingStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 1173267055 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execution Duration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control ExecDuration - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 1173267055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execution Duration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control ExecDuration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2995380357 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The confidence of the best output result found</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control OutputConfidence - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 2995380357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Output confidence</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control OutputConfidence - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 3884218682 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Output Result</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control OutPutResult - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Control 3884218682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Output Result</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Control OutPutResult - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Action 3851712227 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run the YDF model using the inputs provided.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Action Run - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3582521933 - Action 3851712227 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run Model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page YDF Run Model Test - Action Run - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

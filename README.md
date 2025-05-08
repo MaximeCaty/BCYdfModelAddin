@@ -1,7 +1,10 @@
-This example show how to create a control addin to train and run YDF AI Model in Business Central.
-Model functions are runned in javascript using client browser so it is not possible to use thoses function in job queue or web services.
-The extension let you manage models in a table, store inputs and labels, train it from Busienss central data and run model with user inputs. 
-You can also upload existing model created outside of BC, as the library accept tensorflow seved model format.
+This example show how to use a control addin to train and run YDF AI Model in Business Central.
+
+The model is runned in javascript in client browser, so it is not possible to use thoses function in job queue or web services.
+
+The extension let you store models in a table with associated inputs and labels, train new model from Busienss central data and test a model with user inputs. 
+
+You can also upload existing model created outside of BC, as the library accept tensorflow "SavedModel" format (zip file containing .pb data).
 
 Learn more about Google Yggdrasil Decision Forest library here : 
 https://ydf.readthedocs.io/en/stable/
@@ -9,31 +12,12 @@ https://ydf.readthedocs.io/en/stable/
 Javascript implementation : 
 https://ydf.readthedocs.io/en/stable/javascript/
 
-Test it using google sheet data : 
+Play with it with excel dataset/google sheet :
 https://workspace.google.com/marketplace/app/simple_ml_for_sheets/685936641092?hl=fr
 
-The controladdin "YDFModelAddin" provide you bellow function :
+Exemple - Implement a model to run suggestion on an existing page
 
-- TestSampleModel()
-- LoadModel(ModelID: Integer; Base64ModelFileContent: Text)
-- RunModel(ModelID: Integer; JsonInputs: Text)
-- TrainModel(ComaSeparatedDataWithHeader: Text; FeaturesSemantic: Text; OutputColumnLabel: Text)
-
-And triggers :
-
-- AddinReady();
-- TestSuceed(Base64ModelFileContent: Text); 
-- TestFailed(ErrorMessage: Text); 
-- TrainModelSuceed(Base64ModelFileContent: Text);
-- TrainModelFailed(ErrorMessage: Text); 
-- LoadModelFailed(ModelID: Integer; ErrorMessage: Text);
-- LoadModelSuceed(ModelID: Integer; FeaturesNames: Text; FeaturesTypes: Text; FeaturesInternalIdx: Text; FeaturesSpecIdx: Text; LabelClasses: Text); // (triggered by LoadModel) Each variable are separated by a comma and the number of element is the same for each variable.
-- RunModelSuceed(ModelID: Integer; Result: Text);
-- RunModelFailed(ModelID: Integer; ErrorMessage: Text);
-
-Exemple - Implement a model to run suggesiton on an existing page
-
-###### Add the addin to a page ####
+###### Add the usercontrol on a page ####
 
 ```
 usercontrol(YDFAddin; YDFModelAddin)
@@ -71,10 +55,27 @@ usercontrol(YDFAddin; YDFModelAddin)
 }
 ```
 
+###### Load a model #####
+
+Wait the javascript to be loaded (trigger AddinReady) so you can load a model in browser memory.
+You can pass model file as base 64 text to the js function as I did not find a way to pass stream (wich would be more efficient)
+
+
+```
+    trigger AddinReady()
+    var
+      Model: Record "";
+    begin
+        Model.Get(1);  // get a model stored in Business central
+        CurrPage.YDFAddin.LoadModel(Model.ID, Model.GetModelContentAsB64Text()); // pass the model file to javascript as base 64 encoded text
+    end;
+```
 
 ###### Run the model ######
 
 Use bellow code to run model prediction based on your own input data
+Inputs shall be encoded as JSON
+For texte input, the value shall be splited by word (using space as split) to an array as the model use each words separatly to match his dictionnary and run the prediction.
 
 ```
 var

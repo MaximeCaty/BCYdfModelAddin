@@ -356,7 +356,7 @@ page 61353 "YDF Run Model Test"
                             JsonInputs += ',';
                         if InputsType[i] = 'CATEGORICAL_SET' then begin
                             // Cleanup text for unsupported char (CRLF , / \ " ; )
-                            InputLine += '''' + DELCHR(Format(Inputs[i]), '=', CRLF).Replace(',', ' ').Replace('''', ' ').Replace('\', '').Replace('/', '').Replace('"', ' ').Replace(';', '').Trim() + ''',';
+                            InputLine := DELCHR(Format(Inputs[i]), '=', CRLF).Replace(',', ' ').Replace('''', ' ').Replace('\', '').Replace('/', '').Replace('"', ' ').Replace(';', '').Trim();
                             WordsList := InputLine.Trim().Split(' ');
                             JsonInputs += '"' + InputsCaption[I] + '": [[';
                             foreach Word in WordsList do
